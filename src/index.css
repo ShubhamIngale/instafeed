@@ -1,13 +1,123 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #F5F5F5;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.title {
+  margin-bottom:  20px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  overflow: hidden;
+  height: 200px;
+  box-shadow: 0px 3px 7px -2px rgba(179,179,179,1);
+  transition: all .2s ease-in-out;
+}
+.grid-item:hover {
+  box-shadow: 0px 3px 7px -2px rgb(255, 0, 0);
+}
+
+img {
+  width: 100%;
+}
+
+.back-link {
+  font-size: 20px;
+  font-weight: normal;
+  color: darkred;
+  cursor: pointer;
+}
+
+.feed-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.img-div {
+  flex: 1;
+  padding: 20px
+}
+
+.feed-img {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 7px -2px rgba(179,179,179,1);
+-moz-box-shadow: 0px 3px 7px -2px rgba(179,179,179,1);
+box-shadow: 0px 3px 7px -2px rgba(179,179,179,1);
+}
+
+.text-div {
+  flex: 1.5;
+  padding: 20px;
+}
+
+.username {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: coral;
+}
+
+.date {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  color: deeppink;
+}
+
+.caption {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: blueviolet;
+}
+
+.insta-link {
+  padding: 16px 32px;
+  background: lightpink;
+  border: 2px solid mediumorchid;
+  border-radius: 10px;
+  color: royalblue;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+.insta-link:hover {
+  box-shadow: 0px 3px 7px -2px rgba(179,179,179,1);
+}
+
+
+@media screen and (max-width: 767px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .grid-item {
+    height: 130px;
+  }
+
+  .feed-container {
+    flex-direction: column;
+  }
 }
