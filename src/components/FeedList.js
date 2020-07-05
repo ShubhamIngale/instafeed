@@ -11,7 +11,7 @@ const FeedList = (props) => {
   }, []);
 
   const loadData = async () => {
-    const response = await fetch("http://localhost:3001");
+    const response = await fetch("https://instafeed-server.herokuapp.com/");
     const data = await response.json();
     setFeeds(data);
   };
