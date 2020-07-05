@@ -10,7 +10,7 @@ const Feed = ({ match }) => {
   }, []);
 
   const loadData = async () => {
-    const response = await fetch(`https://instafeed-server.herokuapp.com//${match.params.id}`);
+    const response = await fetch(`https://instafeed-server.herokuapp.com/${match.params.id}`);
     const data = await response.json();
     setFeed(data);
   };
