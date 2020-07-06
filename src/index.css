@@ -11,6 +11,19 @@ body {
   justify-content: center;
 }
 
+.loading {
+  vertical-align: middle;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  vertical-align: middle;
+}
+
 .container {
   max-width: 1140px;
 }
