@@ -1,9 +1,12 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 
 const GridItem = (props) => {
   return (
     <div className="grid-item">
-      <img src={props.src} className="grid-item-image" alt={props.alt} />
+      <LazyLoad>
+        <img src={props.src} className="grid-item-image" alt={props.alt} />
+      </LazyLoad>
     </div>
   );
 };
