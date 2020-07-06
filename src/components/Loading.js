@@ -4,7 +4,7 @@ import loader from '../media/loader.svg'
 function Loading() {
         return (
                 <div className="loading">
-                        <img src={loader} />
+                        <img src={loader} alt="Loading...." />
                 </div>
         )
 }

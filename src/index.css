@@ -51,7 +51,7 @@ body {
 }
 .grid-item:hover {
   box-shadow: 0px 3px 7px -2px rgb(255, 0, 0);
-  border-radius: 20px;
+  border-radius: 20px ;
 }
 
 img {
